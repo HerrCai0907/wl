@@ -98,7 +98,7 @@ impl<'source> Tokenizer<'source> {
         let mut tokens = Vec::new();
         loop {
             let tok = self.scan_token();
-            println!("{:?}", &tok);
+            // println!("{:?}", &tok);
             tokens.push(tok);
             if tok.kind == TokenType::Eof {
                 break;
